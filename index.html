@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vite App</title>
+	</head>
+	<body>
+		<!DOCTYPE html>
+		<html lang="en">
+			<head>
+				<meta charset="UTF-8" />
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+				<script src="https://kit.fontawesome.com/097d9616c9.js"></script>
+				<title>Marta Sieczkowska | Ilustration | Graphic design</title>
+			</head>
+			<body>
+				<!-- NAVIGATION MOBILE -->
+				<nav class="nav-mobile">
+					<button class="btn nav-mobile__btn btn-graphic-design">
+						graphic design
+					</button>
+					<button class="btn nav-mobile__btn btn-illustration">
+						illustration
+					</button>
+					<button class="btn nav-mobile__btn btn-about">about</button>
+					<div class="nav-mobile__border-line"></div>
+				</nav>
+
+				<header class="header">
+					<button id="menu-btn" class="btn header__menu-btn">MENU</button>
+					<img
+						id="logo"
+						class="header__logo"
+						src="./img/logo_marta.svg"
+						alt="logo"
+					/>
+					<nav class="nav-desktop">
+						<button class="btn nav-desktop__btn btn-graphic-design">
+							graphic design
+						</button>
+						<button class="btn nav-desktop__btn btn-illustration">
+							illustration
+						</button>
+						<button class="btn nav-desktop__btn btn-about">about</button>
+					</nav>
+				</header>
+
+				<main class="main">
+					<div class="responsive-wrapper">
+						<!-- SECTION ABOUT ME -->
+						<section class="section about-me active">
+							<p class="about-me__p">
+								Hello, I’m Marta and I'm a graphic designer and illustrator from
+								Poland.
+							</p>
+							<p class="about-me__p about-me__p--chart chart">
+								<span class="chart__span-all"
+									>My experience covers / ranges from:</span
+								>
+								<span class="chart__span-left">editorial design</span>
+								<span class="chart__span-right">through</span>
+								<span class="chart__span-left">typography</span>
+								<span class="chart__span-right">''</span>
+								<span class="chart__span-left">educational illustration</span>
+								<span class="chart__span-right">''</span>
+								<span class="chart__span-left">illustration for children</span>
+								<span class="chart__span-right">''</span>
+								<span class="chart__span-left">press illustration</span>
+								<span class="chart__span-right">''</span>
+								<span class="chart__span-left">infographics</span>
+								<span class="chart__span-right">to</span>
+								<span class="chart__span-left">branding.</span>
+							</p>
+							<p class="about-me__p">
+								Sometimes I’m also in charge of children books’ and schoolbooks'
+								layouts, <br />
+								and that's the field of interest I'm pursuing and within which
+								I’m trying to work as often as it's possible.
+							</p>
+							<p class="about-me__p">
+								I also had the pleasure to conduct workshops with both kids and
+								adults on books and lettering.
+							</p>
+							<figure>
+								<img
+									class="about-me__picture"
+									src="img/ABOUT_ME_360/portret_1x_resultado.webp"
+									srcset="
+										img/ABOUT_ME_360/portret_1x_resultado.webp 1x,
+										img/ABOUT_ME_360/portret_2x_resultado.webp 2x
+									"
+									alt="marta sieczkowska portrait"
+								/>
+
+								<figcaption>fot. Maciej Wróbel</figcaption>
+							</figure>
+							<p class="about-me__p">
+								contact me: <br />
+								marta.sieczkowska@vp.pl
+							</p>
+						</section>
+						<!-- END OF SECTION ABOUT ME -->
+
+						<!-- SECTION GOAT -->
+						<section class="section hidden illustration">
+							<header class="section__header">
+								<h2 class="section__h2">Farm animals</h2>
+								<p class="section__p">Personal project</p>
+							</header>
+							<div class="section__img-wrapper">
+								<img
+									class="section__img"
+									src="img/koza_full_360/koza1.webp"
+									srcset="
+										img/koza_full_360/koza1.webp      324w,
+										img/koza_full_1200/koza_1_1x.webp 700w
+									"
+								/>
+								<img
+									class="section__img section__img--only-higher-resolution"
+									src="img/koza_full_360/koza1.webp"
+									srcset="
+										img/koza_full_1200/koza_2_1x.webp  724w,
+										img/koza_full_1200/koza_2_2x.webp 1508w
+									"
+								/>
+								<img
+									class="section__arrow section__arrow--small-to-medium align-right"
+									src="img/strzalka.svg"
+									alt="arrow icon go up"
+								/>
+							</div>
+							<div class="section__nav">
+								<i
+									class="section__nav-icon bckwrd-illustration fas fa-angle-left"
+								></i>
+								<i class="section__nav-icon fas fa-th-large"></i>
+								<i
+									class="section__nav-icon frwd-illustration fas fa-angle-right"
+								></i>
+							</div>
+						</section>
+						<!-- END OF SECTION GOAT -->
+
+						<!-- SECTION PIGEON -->
+						<section class="section hidden illustration">
+							<header class="section__header">
+								<h2 class="section__h2">Glorious pigeon</h2>
+								<p class="section__p">Illustration.</p>
+							</header>
+							<div class="section__img-wrapper">
+								<img
+									class="section__img"
+									src="img/Pigeon_360_full/pigeon_1x.webp"
+									srcset="
+										img/Pigeon_360_full/pigeon_1x.webp   324w,
+										img/Pigeon_1200_full/pigeon_1x.webp  724w,
+										img/Pigeon_1200_full/pigeon_2x.webp 1508w
+									"
+								/>
+								<img
+									class="section__arrow section__arrow--small-to-medium align-right"
+									src="img/strzalka.svg"
+									alt="arrow icon go up"
+								/>
+							</div>
+							<div class="section__nav">
+								<i
+									class="section__nav-icon bckwrd-illustration fas fa-angle-left"
+								></i>
+								<i class="section__nav-icon fas fa-th-large"></i>
+								<i
+									class="section__nav-icon frwd-illustration fas fa-angle-right"
+								></i>
+							</div>
+						</section>
+						<!-- END OF SECTION PIGEON -->
+
+						<!-- SECTION GANNA GLASS -->
+						<section class="section hidden graphic-design">
+							<header class="section__header">
+								<h2 class="section__h2">
+									Ganna Glass. <br />
+									Logo design
+								</h2>
+								<p class="section__p">
+									Ganna Grudnytska is an artist – a glass maker and an
+									illustrator with a style of her own: organic shapes combined
+									with a geometric touch. When I was asked to make a logo for
+									her I took inspiration from her fascination for nature and
+									design. The logo itself forms a hidden signature as there’s a
+									lot of “Gs” in her surname. The branding is to be used on the
+									website, glass prints, business cards, and any other media –
+									it’s simple and universal.
+								</p>
+							</header>
+
+							<div class="section__img-wrapper">
+								<img
+									class="section__img"
+									src="img/Ganna_glass_360_full/GANNA_1_1x.webp"
+									srcset="
+										img/Ganna_glass_360_full/GANNA_1_1x.webp   324w,
+										img/Ganna_glass_1200_full/GANNA_1_1x.webp  724w,
+										img/Ganna_glass_1200_full/GANNA_1_2x.webp 1508w
+									"
+								/>
+
+								<img
+									class="section__img align-center glass-white-logo"
+									src="img/Ganna_glass_360_full/GANNA_2_1x.webp"
+									srcset="
+										img/Ganna_glass_360_full/GANNA_2_1x.webp   324w,
+										img/Ganna_glass_1200_full/GANNA_2_1x.webp  724w,
+										img/Ganna_glass_1200_full/GANNA_2_2x.webp 1508w
+									"
+								/>
+								<img
+									class="section__img"
+									src="img/Ganna_glass_360_full/GANNA_3_1x.webp"
+									srcset="
+										img/Ganna_glass_360_full/GANNA_3_1x.webp   324w,
+										img/Ganna_glass_1200_full/GANNA_3_1x.webp  724w,
+										img/Ganna_glass_1200_full/GANNA_3_2x.webp 1508w
+									"
+								/>
+								<img
+									class="section__img"
+									src="img/Ganna_glass_360_full/GANNA_4_1x.webp"
+									srcset="
+										img/Ganna_glass_360_full/GANNA_4_1x.webp   324w,
+										img/Ganna_glass_1200_full/GANNA_4_1x.webp  724w,
+										img/Ganna_glass_1200_full/GANNA_4_2x.webp 1508w
+									"
+								/>
+								<img
+									class="section__arrow section__arrow--small-to-medium align-right"
+									src="img/strzalka.svg"
+									alt="arrow icon go up"
+								/>
+							</div>
+							<div class="section__nav">
+								<i
+									class="section__nav-icon bckwrd-illustration fas fa-angle-left"
+								></i>
+								<i class="section__nav-icon fas fa-th-large"></i>
+								<i
+									class="section__nav-icon frwd-illustration fas fa-angle-right"
+								></i>
+							</div>
+						</section>
+						<!-- END OF SECTION GANNA GLASS -->
+
+						<!-- SECTION SEAGULL -->
+						<section class="section hidden illustration">
+							<header class="section__header">
+								<h2 class="section__h2">Seagull</h2>
+								<p class="section__p">Illustration.</p>
+							</header>
+							<div class="section__img-wrapper">
+								<img
+									class="section__img"
+									src="img/Mewa_360_full/mewa_1_1x.webp"
+									srcset="
+										img/Mewa_360_full/mewa_1_1x.webp   324w,
+										img/Mewa_1200_full/mewa_1_1x.webp  724w,
+										img/Mewa_1200_full/mewa_1_2x.webp 1508w
+									"
+								/>
+								<img
+									class="section__img"
+									src="img/Mewa_360_full/mewa_2_1x.webp"
+									srcset="
+										img/Mewa_360_full/mewa_2_1x.webp   324w,
+										img/Mewa_1200_full/mewa_2_1x.webp  724w,
+										img/Mewa_1200_full/mewa_2_2x.webp 1508w
+									"
+								/>
+								<img
+									class="section__arrow section__arrow--small-to-medium align-right"
+									src="img/strzalka.svg"
+									alt="arrow icon go up"
+								/>
+							</div>
+							<div class="section__nav">
+								<i
+									class="section__nav-icon bckwrd-illustration fas fa-angle-left"
+								></i>
+								<i class="section__nav-icon fas fa-th-large"></i>
+								<i
+									class="section__nav-icon frwd-illustration fas fa-angle-right"
+								></i>
+							</div>
+						</section>
+						<!-- END OF SECTION SEAGULL -->
+
+						<!-- SECTION TERESA URBANEK -->
+						<section class="section hidden graphic-design">
+							<header class="section__header">
+								<h2 class="section__h2">
+									Tailor shop <br />
+									brand collateral
+								</h2>
+								<p class="section__p">
+									Teresa Urbanek is a tailor from Wrocław, running her own small
+									business in the Nadodrze district. As Pantograf collective (me
+									and Justyna Dybala), we were asked to build a new visual
+									identity for her shop. So a new branding was created: logo,
+									custom typography, leaflets, business cards, labels. A very
+									important part of this collateral is a hanging signboard
+									designed by us and made by Kujto – metal workshop.
+								</p>
+							</header>
+							<div class="section__img-wrapper">
+								<img
+									class="section__img"
+									src="img/Teresa_Urbanek_360_full/urbanek_1_1x.webp"
+									srcset="
+										img/Teresa_Urbanek_360_full/urbanek_1_1x.webp   324w,
+										img/Teresa_Urbanek_1200_full/urbanek_1_1x.webp  724w,
+										img/Teresa_Urbanek_1200_full/urbanek_1_2x.webp 1508w
+									"
+								/>
+								<img
+									class="section__img"
+									src="img/Teresa_Urbanek_360_full/urbanek_2_1x.webp"
+									srcset="
+										img/Teresa_Urbanek_360_full/urbanek_2_1x.webp   324w,
+										img/Teresa_Urbanek_1200_full/urbanek_2_1x.webp  724w,
+										img/Teresa_Urbanek_1200_full/urbanek_2_2x.webp 1508w
+									"
+								/>
+								<img
+									class="section__img"
+									src="img/Teresa_Urbanek_360_full/urbanek_3_1x.webp"
+									srcset="
+										img/Teresa_Urbanek_360_full/urbanek_3_1x.webp   324w,
+										img/Teresa_Urbanek_1200_full/urbanek_3_1x.webp  724w,
+										img/Teresa_Urbanek_1200_full/urbanek_3_2x.webp 1508w
+									"
+								/>
+								<img
+									class="section__img"
+									src="img/Teresa_Urbanek_360_full/urbanek_4_1x.webp"
+									srcset="
+										img/Teresa_Urbanek_360_full/urbanek_4_1x.webp   324w,
+										img/Teresa_Urbanek_1200_full/urbanek_4_1x.webp  724w,
+										img/Teresa_Urbanek_1200_full/urbanek_4_2x.webp 1508w
+									"
+								/>
+								<div class="section__inside-wrapper">
+									<img
+										class="section__img section__img--5"
+										src="img/Teresa_Urbanek_360_full/urbanek_5_1x.webp"
+										srcset="
+											img/Teresa_Urbanek_360_full/urbanek_5_1x.webp   324w,
+											img/Teresa_Urbanek_1200_full/urbanek_5_1x.webp  724w,
+											img/Teresa_Urbanek_1200_full/urbanek_5_2x.webp 1508w
+										"
+									/>
+									<img
+										class="section__img section__img--6"
+										src="img/Teresa_Urbanek_360_full/urbanek_6_1x.webp"
+										srcset="
+											img/Teresa_Urbanek_360_full/urbanek_6_1x.webp   324w,
+											img/Teresa_Urbanek_1200_full/urbanek_6_1x.webp  724w,
+											img/Teresa_Urbanek_1200_full/urbanek_6_2x.webp 1508w
+										"
+									/>
+								</div>
+								<img
+									class="section__img"
+									src="img/Teresa_Urbanek_360_full/urbanek_7_1x.webp"
+									srcset="
+										img/Teresa_Urbanek_360_full/urbanek_7_1x.webp   324w,
+										img/Teresa_Urbanek_1200_full/urbanek_7_1x.webp  724w,
+										img/Teresa_Urbanek_1200_full/urbanek_7_2x.webp 1508w
+									"
+								/>
+								<img
+									class="section__img"
+									src="img/Teresa_Urbanek_360_full/urbanek_8_1x.webp"
+									srcset="
+										img/Teresa_Urbanek_360_full/urbanek_8_1x.webp   324w,
+										img/Teresa_Urbanek_1200_full/urbanek_8_1x.webp  724w,
+										img/Teresa_Urbanek_1200_full/urbanek_8_2x.webp 1508w
+									"
+								/>
+								<img
+									class="section__img"
+									src="img/Teresa_Urbanek_360_full/urbanek_9_1x.webp"
+									srcset="
+										img/Teresa_Urbanek_360_full/urbanek_9_1x.webp   324w,
+										img/Teresa_Urbanek_1200_full/urbanek_9_1x.webp  724w,
+										img/Teresa_Urbanek_1200_full/urbanek_9_2x.webp 1508w
+									"
+								/>
+								<img
+									class="section__img"
+									src="img/Teresa_Urbanek_360_full/urbanek_10_1x.webp"
+									srcset="
+										img/Teresa_Urbanek_360_full/urbanek_10_1x.webp   324w,
+										img/Teresa_Urbanek_1200_full/urbanek_10_1x.webp  724w,
+										img/Teresa_Urbanek_1200_full/urbanek_10_2x.webp 1508w
+									"
+								/>
+								<img
+									class="section__img"
+									src="img/Teresa_Urbanek_360_full/urbanek_11_1x.webp"
+									srcset="
+										img/Teresa_Urbanek_360_full/urbanek_11_1x.webp   324w,
+										img/Teresa_Urbanek_1200_full/urbanek_11_1x.webp  724w,
+										img/Teresa_Urbanek_1200_full/urbanek_11_2x.webp 1508w
+									"
+								/>
+								<img
+									class="section__img"
+									src="img/Teresa_Urbanek_360_full/urbanek_12_1x.webp"
+									srcset="
+										img/Teresa_Urbanek_360_full/urbanek_12_1x.webp   324w,
+										img/Teresa_Urbanek_1200_full/urbanek_12_1x.webp  724w,
+										img/Teresa_Urbanek_1200_full/urbanek_12_2x.webp 1508w
+									"
+								/>
+								<img
+									class="section__img"
+									src="img/Teresa_Urbanek_360_full/urbanek_13_1x.webp"
+									srcset="
+										img/Teresa_Urbanek_360_full/urbanek_13_1x.webp   324w,
+										img/Teresa_Urbanek_1200_full/urbanek_13_1x.webp  724w,
+										img/Teresa_Urbanek_1200_full/urbanek_13_2x.webp 1508w
+									"
+								/>
+								<img
+									class="section__arrow section__arrow--small-to-medium align-right"
+									src="img/strzalka.svg"
+									alt="arrow icon go up"
+								/>
+							</div>
+							<div class="section__nav">
+								<i
+									class="section__nav-icon bckwrd-illustration fas fa-angle-left"
+								></i>
+								<i class="section__nav-icon fas fa-th-large"></i>
+								<i
+									class="section__nav-icon frwd-illustration fas fa-angle-right"
+								></i>
+							</div>
+						</section>
+						<!-- END OF SECTION TERESA URBANEK -->
+
+						<!-- SECTION EABS -->
+						<section class="section hidden graphic-design">
+							<header class="section__header">
+								<h2 class="section__h2">
+									EABS <br />
+									logo design
+								</h2>
+								<p class="section__p">
+									EABS is a Polish septet playing sounds inspired by traditional
+									Polish jazz as well as by other genres, like hip-hop, jungle,
+									funk, and experimental music. Logo is being used on record
+									covers, in promotional material, and banners.
+								</p>
+							</header>
+							<div class="section__img-wrapper">
+								<img
+									class="section__img"
+									src="img/EABS_360_full/EABS_1_1x.webp"
+									srcset="
+										img/EABS_360_full/EABS_1_1x.webp   324w,
+										img/EABS_1200_full/EABS_1_1x.webp  724w,
+										img/EABS_1200_full/EABS_1_2x.webp 1508w
+									"
+								/>
+								<img
+									class="section__img"
+									src="img/EABS_360_full/EABS_2_1x.webp"
+									srcset="
+										img/EABS_360_full/EABS_2_1x.webp   324w,
+										img/EABS_1200_full/EABS_2_1x.webp  724w,
+										img/EABS_1200_full/EABS_2_2x.webp 1508w
+									"
+								/>
+								<img
+									class="section__img"
+									src="img/EABS_360_full/EABS_3_1x.webp"
+									srcset="
+										img/EABS_360_full/EABS_3_1x.webp   324w,
+										img/EABS_1200_full/EABS_3_1x.webp  724w,
+										img/EABS_1200_full/EABS_3_2x.webp 1508w
+									"
+								/>
+								<img
+									class="section__img"
+									src="img/EABS_360_full/EABS_4_1x.webp"
+									srcset="
+										img/EABS_360_full/EABS_4_1x.webp   324w,
+										img/EABS_1200_full/EABS_4_1x.webp  724w,
+										img/EABS_1200_full/EABS_4_2x.webp 1508w
+									"
+								/>
+								<img
+									class="section__img"
+									src="img/EABS_360_full/EABS_5_1x.webp"
+									srcset="
+										img/EABS_360_full/EABS_5_1x.webp   324w,
+										img/EABS_1200_full/EABS_5_1x.webp  724w,
+										img/EABS_1200_full/EABS_5_2x.webp 1508w
+									"
+								/>
+								<img
+									class="section__img"
+									src="img/EABS_360_full/EABS_6_1x.webp"
+									srcset="
+										img/EABS_360_full/EABS_6_1x.webp   324w,
+										img/EABS_1200_full/EABS_6_1x.webp  724w,
+										img/EABS_1200_full/EABS_6_2x.webp 1508w
+									"
+								/>
+								<img
+									class="section__arrow section__arrow--small-to-medium align-right"
+									src="img/strzalka.svg"
+									alt="arrow icon go up"
+								/>
+							</div>
+							<div class="section__nav">
+								<i
+									class="section__nav-icon bckwrd-illustration fas fa-angle-left"
+								></i>
+								<i class="section__nav-icon fas fa-th-large"></i>
+								<i
+									class="section__nav-icon frwd-illustration fas fa-angle-right"
+								></i>
+							</div>
+						</section>
+						<!-- END OF SECTION EABS -->
+
+						<!-- SECTION LASEK -->
+						<section class="section hidden graphic-design">
+							<header class="section__header">
+								<h2 class="section__h2">
+									Lasek <br />
+									visual identity
+								</h2>
+								<p class="section__h2">
+									Lasek is a small vegetable and fruit shop. Its owner Mrs
+									Grażyna is a true nature lover. She spends every vacation in
+									the forest fishing and picking up mushrooms. In Polish “Lasek”
+									means “little forest” – and that’s where the name comes from.
+									New design was applied to both the shop window and to the
+									signboard which constitutes a main part of its visual
+									identity.
+								</p>
+							</header>
+							<div class="section__img-wrapper">
+								<img
+									class="section__img"
+									src="img/Lasek_360_full/lasek_1_1x.webp"
+									srcset="
+										img/Lasek_360_full/lasek_1_1x.webp   324w,
+										img/Lasek_1200_full/lasek_1_1x.webp  724w,
+										img/Lasek_1200_full/lasek_1_2x.webp 1508w
+									"
+								/>
+								<img
+									class="section__img align-center half-width"
+									src="img/Lasek_360_full/lasek_2_1x.webp"
+									srcset="
+										img/Lasek_360_full/lasek_2_1x.webp   324w,
+										img/Lasek_1200_full/lasek_2_1x.webp  724w,
+										img/Lasek_1200_full/lasek_2_2x.webp 1508w
+									"
+								/>
+								<img
+									class="section__img"
+									src="img/Lasek_360_full/lasek_3_1x.webp"
+									srcset="
+										img/Lasek_360_full/lasek_3_1x.webp   324w,
+										img/Lasek_1200_full/lasek_3_1x.webp  724w,
+										img/Lasek_1200_full/lasek_3_2x.webp 1508w
+									"
+								/>
+								<img
+									class="section__img"
+									src="img/Lasek_360_full/lasek_4_1x.webp"
+									srcset="
+										img/Lasek_360_full/lasek_4_1x.webp   324w,
+										img/Lasek_1200_full/lasek_4_1x.webp  724w,
+										img/Lasek_1200_full/lasek_4_2x.webp 1508w
+									"
+								/>
+								<img
+									class="section__arrow section__arrow--small-to-medium align-right"
+									src="img/strzalka.svg"
+									alt="arrow icon go up"
+								/>
+							</div>
+							<div class="section__nav">
+								<i
+									class="section__nav-icon bckwrd-illustration fas fa-angle-left"
+								></i>
+								<i class="section__nav-icon fas fa-th-large"></i>
+								<i
+									class="section__nav-icon frwd-illustration fas fa-angle-right"
+								></i>
+							</div>
+						</section>
+						<!-- END OF SECTION LASEK -->
+
+						<!-- SECTION ZAMEK -->
+						<section class="section hidden illustration">
+							<header class="section__header">
+								<h2 class="section__h2">Circus left the town</h2>
+								<p class="section__p">Illustration.</p>
+							</header>
+							<div class="section__img-wrapper">
+								<img
+									class="section__img"
+									src="img/Zamek_360_full/zamek_1_1x.webp"
+									srcset="
+										img/Zamek_360_full/zamek_1_1x.webp   324w,
+										img/Zamek_1200_full/zamek_1_1x.webp  724w,
+										img/Zamek_1200_full/zamek_1_2x.webp 1508w
+									"
+								/>
+								<img
+									class="section__img"
+									src="img/Zamek_360_full/zamek_2_1x.webp"
+									srcset="
+										img/Zamek_360_full/zamek_2_1x.webp   324w,
+										img/Zamek_1200_full/zamek_2_1x.webp  724w,
+										img/Zamek_1200_full/zamek_2_2x.webp 1508w
+									"
+								/>
+								<img
+									class="section__arrow section__arrow--small-to-medium align-right"
+									src="img/strzalka.svg"
+									alt="arrow icon go up"
+								/>
+							</div>
+							<div class="section__nav">
+								<i
+									class="section__nav-icon bckwrd-illustration fas fa-angle-left"
+								></i>
+								<i class="section__nav-icon fas fa-th-large"></i>
+								<i
+									class="section__nav-icon frwd-illustration fas fa-angle-right"
+								></i>
+							</div>
+						</section>
+						<!-- END OF SECTION ZAMEK -->
+
+						<div class="all-thumbnails">
+							<div
+								class="single-thumbnail single-thumbnail--thumbnail-1 thumb-illustration"
+							>
+								<div class="single-thumbnail__img-description">
+									<p class="single-thumbnail__p">
+										Goat of bad<br />
+										and good <br />news
+									</p>
+								</div>
+							</div>
+							<div
+								class="single-thumbnail single-thumbnail--thumbnail-2 thumb-illustration"
+							>
+								<div class="single-thumbnail__img-description">
+									<p class="single-thumbnail__p">Glorious <br />pigeon</p>
+								</div>
+							</div>
+							<div
+								class="single-thumbnail single-thumbnail--thumbnail-3 thumb-design"
+							>
+								<div class="single-thumbnail__img-description">
+									<p class="single-thumbnail__p">
+										Ganna Glass <br />logo design
+									</p>
+								</div>
+							</div>
+							<div
+								class="single-thumbnail single-thumbnail--thumbnail-4 thumb-illustration"
+							>
+								<div class="single-thumbnail__img-description">
+									<p class="single-thumbnail__p">Seagull</p>
+								</div>
+							</div>
+							<div
+								class="single-thumbnail single-thumbnail--thumbnail-5 thumb-design"
+							>
+								<div class="single-thumbnail__img-description">
+									<p class="single-thumbnail__p">
+										Tailor shop <br />
+										brand <br />collateral
+									</p>
+								</div>
+							</div>
+							<div
+								class="single-thumbnail single-thumbnail--thumbnail-6 thumb-design"
+							>
+								<div class="single-thumbnail__img-description">
+									<p class="single-thumbnail__p">EABS <br />logo design</p>
+								</div>
+							</div>
+							<div
+								class="single-thumbnail single-thumbnail--thumbnail-7 thumb-design"
+							>
+								<div class="single-thumbnail__img-description">
+									<p class="single-thumbnail__p">
+										Lasek grocery <br />brand <br />collateral
+									</p>
+								</div>
+							</div>
+							<div
+								class="single-thumbnail single-thumbnail--thumbnail-8 thumb-illustration"
+							>
+								<div class="single-thumbnail__img-description">
+									<p class="single-thumbnail__p">Circus left <br />the town</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</main>
+
+				<footer class="footer">
+					<div class="footer__socials">
+						<a href="https://www.behance.net/martasieczkowska" target="_blank"
+							><i class="footer__social-i fab fa-behance"></i
+						></a>
+						<a href="mailto:marta.sieczkowska@vp.pl" target="_blank"
+							><i class="footer__social-i far fa-envelope"></i
+						></a>
+						<a href="https://www.instagram.com/mm_sieczkowska/" target="_blank"
+							><i class="footer__social-i fab fa-instagram"></i
+						></a>
+					</div>
+				</footer>
+				<script type="module" src="/main.js"></script>
+			</body>
+		</html>
+
+		<script type="module" src="/main.js"></script>
+	</body>
+</html>

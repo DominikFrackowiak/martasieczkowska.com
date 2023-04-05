@@ -1,0 +1,15 @@
+.chart {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+
+	&__span-all {
+		grid-column: 1/-1;
+	}
+	&__span-left {
+		grid-column: 1/3;
+	}
+	&__span-right {
+		grid-column: 4/5;
+		text-align: right;
+	}
+}

@@ -1,0 +1,39 @@
+.nav-mobile {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 0;
+	transition: 0.5s;
+
+	&__btn {
+		font-size: 0;
+		display: none;
+	}
+
+	&.active {
+		height: 113px;
+	}
+
+	&.active .nav-mobile__btn {
+		display: block;
+		font-size: 0.94rem;
+		height: 33%;
+	}
+
+	&__border-line {
+		width: 80%;
+		height: 1px;
+		background-color: var(--black);
+	}
+}
+
+.btn {
+	border: 1px solid transparent;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.header-menu-btn {
+	margin: 0 auto;
+}

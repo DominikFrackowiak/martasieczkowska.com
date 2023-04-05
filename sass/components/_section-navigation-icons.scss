@@ -1,0 +1,17 @@
+.section {
+	&__nav {
+		margin: 0 auto;
+		width: 120px;
+		height: 60px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		cursor: pointer;
+		grid-column: 1/-1;
+	}
+
+	&__nav-icon {
+		font-size: 25px;
+		color: #ccc;
+	}
+}

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Source+Serif+Pro:wght@400;700&display=swap');
+
+h2,
+p {
+	font-family: 'Source Serif Pro', serif;
+	font-size: 0.94rem;
+}
+
+p {
+	line-height: 150%;
+}
+
+p.single-thumbnail__p {
+	font-size: 0.94rem;
+	line-height: 120%;
+	
+	@media (min-width: 1024px) {
+		
+		font-size: 1.33rem;
+	}
+}
+
+figcaption {
+	font-size: 0.7rem;
+	justify-self: end;
+}
+
+h2 {
+	font-size: 1.88rem;
+}
+
+a,
+li,
+button {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	letter-spacing: 0.2px;
+	font-size: 0.94rem;
+}
+
+button.active {
+	font-weight: 700;
+}
