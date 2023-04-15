@@ -3,13 +3,16 @@ export const handleMainResizingAndThumbnailsWrapperTranslate = (
 	main,
 	thumbnails
 ) => {
+	let thumbnailsWrapperHeight = thumbnails.offsetHeight
+	let sectionHeight = section.offsetHeight
+
 	
-		if (section.classList.contains('active')) {
-			main.style.height = `${thumbnails.offsetHeight} + ${section.offsetHeight} px`
-			thumbnails.style.transform = `translateY(${section.offsetHeight}px)`
-		} else {
-			main.style.height = `${thumbnails.offsetHeight} px`
-			thumbnails.style.transform = `translateY(0)`
-		}
-	
+
+	if (section.classList.contains('active')) {
+		main.style.height = `${thumbnailsWrapperHeight} + ${sectionHeight}px`
+		thumbnails.style.transform = `translateY(${sectionHeight}px)`
+	} else {
+		main.style.height = `${thumbnailsWrapperHeight}px`
+		thumbnails.style.transform = `translateY(0)`
+	}
 }
