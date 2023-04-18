@@ -1,6 +1,8 @@
 .single-thumbnail {
 	position: relative;
+	//test odejmuje po 5px height
 	height: 129px;
+	// width: calc(360px/2 - 15px);
 	background-repeat: no-repeat;
 	background-size: cover;
 	cursor: pointer;
@@ -13,7 +15,7 @@
 		height: 175px;
 	}
 
-	@media (min-width: 1024px) {
+	@media (min-width: 992px) {
 		height: 233px;
 	}
 

@@ -3,9 +3,10 @@
 	// top: 0;
 	// left: 0;
 	width: 360px;
-	min-height: 100vh;
+	// min-height: 100vh;
 	margin: 0 auto;
 	padding: 15px;
+	
 
 	@media (min-width: 576px) {
 		width: 576px;
@@ -15,8 +16,8 @@
 		width: 768px;
 	}
 
-	@media (min-width: 1024px) {
-		width: 1024px;
+	@media (min-width: 992px) {
+		width: 992px;
 	}
 
 	@media (min-width: 1200px) {

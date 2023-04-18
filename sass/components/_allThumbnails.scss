@@ -1,17 +1,29 @@
 .all-thumbnails {
 	position: absolute;
-	// top: 0;
 	left: 0;
 	width: 100%;
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(2, auto);
+	width: 360px;
 	gap: 15px;
+
+	@media (min-width: 576px) {
+		width: 576px;
+	}
+
 	@media (min-width: 768px) {
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(3, auto);
 		gap: 20px;
 		padding-bottom: 60px;
+		width: 768px;
 	}
-	@media (min-width: 1024px) {
+
+	@media (min-width: 992px) {
+		width: 992px;
+	}
+
+	@media (min-width: 1200px) {
 		gap: 30px;
+		width: 1200px;
 	}
 }

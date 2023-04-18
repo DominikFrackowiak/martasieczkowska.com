@@ -5,9 +5,11 @@
 	gap: 0.94rem;
 	padding-bottom: 40px;
 	transform: translateX(-100vw);
- opacity: 0;
+	opacity: 0;
 	display: none;
- transition: 5s;
+	transition: 5s;
+	width: 360px;
+	border: 1px solid red;
 
 	&.active {
 		transform: translateX(0);
@@ -15,15 +17,30 @@
 		display: grid;
 	}
 
+	@media (min-width: 576px) {
+		width: 576px;
+	}
+
+	@media (min-width: 992px) {
+		width: 992px;
+	}
+
 	@media (min-width: 1200px) {
 		grid-template-columns: repeat(4, 1fr);
-
+		width: 1200px;
 		grid-auto-rows: max-content;
 		gap: 1.88rem;
 	}
 
-	&.about-me{
-		grid-template-columns:1fr;
+	&.about-me {
+		grid-template-columns: 1fr;
+		width: 100%;
+	}
+
+	.about-me__p {
+		@media (min-width: 1200px) {
+			max-width: 45%;
+		}
 	}
 
 	&__h2 {
