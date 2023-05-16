@@ -1,0 +1,37 @@
+.section {
+	&.about-me {
+		grid-template-columns: 1fr;
+		width: 100%;
+	}
+
+	.about-me__p {
+		@media (min-width: 1200px) {
+			max-width: 45%;
+		}
+	}
+}
+
+.section.active {
+	.about-me {
+		// display: grid;
+		&__p {
+			display: block;
+		}
+
+		&__p--chart {
+			display: grid;
+		}
+
+		&__p--chart > * {
+			display: block;
+		}
+
+		&__figure {
+			display: block;
+		}
+
+		&__figure * {
+			display: block;
+		}
+	}
+}

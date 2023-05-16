@@ -19,3 +19,11 @@
 		color: #ccc;
 	}
 }
+
+.section.active {
+	.section {
+		&__nav {
+			display: flex;
+		}
+	}
+}

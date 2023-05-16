@@ -4,8 +4,9 @@
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(2, auto);
-	width: 360px;
+	width: 320px;
 	gap: 15px;
+	transition: 0.5s;
 
 	@media (min-width: 576px) {
 		width: 576px;
@@ -23,6 +24,7 @@
 	}
 
 	@media (min-width: 1200px) {
+		padding: 20px 0;
 		gap: 30px;
 		width: 1200px;
 	}

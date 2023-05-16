@@ -9,15 +9,18 @@ import { handleGraphicDesignIllustrationThumbnailsFiltering } from './scripts/gr
 import { toggleButtonActive } from './scripts/buttonsToggleActive'
 import { handleBackwardsOnIconClicked } from './scripts/backwardsForwardsIcons'
 import { handleForwardsOnIconClicked } from './scripts/backwardsForwardsIcons'
+import { handleScrollToTopOnArrowClicked } from './scripts/arrow'
 
 const init = () => {
 	const htmlElements = {
 		document: document.defaultView,
 		body: document.body,
+		myWindow: window,
 		logo: document.querySelector('#logo'),
 		menuBtn: document.querySelector('#menu-btn'),
 		navMobile: document.querySelector('.nav-mobile'),
 		allBtns: document.querySelectorAll('.btn'),
+		aboutBtns: document.querySelectorAll('.btn-about'),
 		allSections: document.querySelectorAll('.section'),
 		aboutSection: document.querySelector('.about-me'),
 		allSingleThumbnails: document.querySelectorAll('.single-thumbnail'),
@@ -27,15 +30,14 @@ const init = () => {
 		closeIcons: document.querySelectorAll('.fa-th-large'),
 		forwardIcons: document.querySelectorAll('.fa-angle-right'),
 		backwardIcons: document.querySelectorAll('.fa-angle-left'),
+		arrows: document.querySelectorAll('.section__arrow'),
+		sectionsIllustration: document.querySelectorAll('.illustration'),
+		sectionsGraphicDesign: document.querySelectorAll('.graphic-design'),
+		frwrdIconsIllustrations: document.querySelectorAll('.frwd-illustration'),
+		bckwrdIconsIllustrations: document.querySelectorAll('.bckwrd-illustration'),
+		frwrdIconsDesigns: document.querySelectorAll('.frwd-design'),
+		bckwrdIconsDesigns: document.querySelectorAll('.bckwrd-design'),
 	}
-
-	handleSectionAbout(
-		htmlElements.allBtns,
-		htmlElements.aboutSection,
-		htmlElements.main,
-		htmlElements.thumbnailsWrapper,
-		htmlElements.fullSizeImagesHiddenSections
-	)
 
 	toggleMenuDisplay(htmlElements.menuBtn, htmlElements.navMobile)
 
@@ -45,7 +47,7 @@ const init = () => {
 			if (section.classList.contains('active')) {
 				handleMainResizingAndThumbnailsWrapperTranslate(
 					section,
-					htmlElements.main,
+					htmlElements.body,
 					htmlElements.thumbnailsWrapper
 				)
 			}
@@ -75,7 +77,9 @@ const init = () => {
 				],
 				index,
 				htmlElements.main,
-				htmlElements.thumbnailsWrapper
+				htmlElements.thumbnailsWrapper,
+				htmlElements.allBtns,
+				htmlElements.myWindow
 			)
 		)
 	)
@@ -85,7 +89,20 @@ const init = () => {
 		htmlElements.allSingleThumbnails
 	)
 
-	toggleButtonActive(htmlElements.allBtns)
+	toggleButtonActive(
+		htmlElements.allBtns,
+		htmlElements.allSections,
+		htmlElements.main,
+		htmlElements.thumbnailsWrapper
+	)
+
+	handleSectionAbout(
+		htmlElements.aboutBtns,
+		htmlElements.aboutSection,
+		htmlElements.main,
+		htmlElements.thumbnailsWrapper,
+		htmlElements.fullSizeImagesHiddenSections
+	)
 
 	htmlElements.closeIcons.forEach(closeIcon =>
 		closeIcon.addEventListener('click', () => {
@@ -119,9 +136,7 @@ const init = () => {
 		htmlElements.thumbnailsWrapper
 	)
 
-	
-	}
-	
-
+	handleScrollToTopOnArrowClicked(htmlElements.arrows, htmlElements.myWindow)
+}
 
 document.addEventListener('DOMContentLoaded', init)

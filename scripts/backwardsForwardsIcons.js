@@ -9,6 +9,7 @@ export const handleBackwardsOnIconClicked = (
 ) => {
 	icons.forEach((icon, index) =>
 		icon.addEventListener('click', () => {
+			console.log(sections)
 			if (index > 0) {
 				sections[index].classList.remove('active')
 				sections[index - 1].classList.add('active')
@@ -31,6 +32,7 @@ export const handleForwardsOnIconClicked = (
 ) => {
 	icons.forEach((icon, index) =>
 		icon.addEventListener('click', () => {
+			console.log('test forwards')
 			if (index < icons.length - 1) {
 				sections[index].classList.remove('active')
 				sections[index + 1].classList.add('active')
