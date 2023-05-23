@@ -10,6 +10,10 @@ import { toggleButtonActive } from './scripts/buttonsToggleActive'
 import { handleBackwardsOnIconClicked } from './scripts/backwardsForwardsIcons'
 import { handleForwardsOnIconClicked } from './scripts/backwardsForwardsIcons'
 import { handleScrollToTopOnArrowClicked } from './scripts/arrow'
+import { handleForwardsIllustrations } from './scripts/backwardsForwardsIcons'
+import { handleForwardsGraphicDesigns } from './scripts/backwardsForwardsIcons'
+import { handleBackwardsIllustrations } from './scripts/backwardsForwardsIcons'
+import { handleBackwardsGraphicDesigns } from './scripts/backwardsForwardsIcons'
 
 const init = () => {
 	const htmlElements = {
@@ -31,6 +35,8 @@ const init = () => {
 		forwardIcons: document.querySelectorAll('.fa-angle-right'),
 		backwardIcons: document.querySelectorAll('.fa-angle-left'),
 		arrows: document.querySelectorAll('.section__arrow'),
+		btnsGraphicDesign: document.querySelectorAll('.btn-graphic-design'),
+		btnsIllustration: document.querySelectorAll('.btn-illustration'),
 		sectionsIllustration: document.querySelectorAll('.illustration'),
 		sectionsGraphicDesign: document.querySelectorAll('.graphic-design'),
 		frwrdIconsIllustrations: document.querySelectorAll('.frwd-illustration'),
@@ -121,7 +127,6 @@ const init = () => {
 	)
 
 	handleBackwardsOnIconClicked(
-		htmlElements.allBtns,
 		htmlElements.backwardIcons,
 		htmlElements.fullSizeImagesHiddenSections,
 		htmlElements.main,
@@ -129,9 +134,44 @@ const init = () => {
 	)
 
 	handleForwardsOnIconClicked(
-		htmlElements.allBtns,
 		htmlElements.forwardIcons,
 		htmlElements.fullSizeImagesHiddenSections,
+		htmlElements.main,
+		htmlElements.thumbnailsWrapper
+	)
+
+	handleForwardsIllustrations(
+		htmlElements.btnsIllustration,
+		htmlElements.sectionsIllustration,
+		htmlElements.sectionsGraphicDesign,
+		htmlElements.frwrdIconsIllustrations,
+		htmlElements.main,
+		htmlElements.thumbnailsWrapper
+	)
+
+	handleForwardsGraphicDesigns(
+		htmlElements.btnsGraphicDesign,
+		htmlElements.sectionsIllustration,
+		htmlElements.sectionsGraphicDesign,
+		htmlElements.frwrdIconsDesigns,
+		htmlElements.main,
+		htmlElements.thumbnailsWrapper
+	)
+
+	handleBackwardsIllustrations(
+		htmlElements.btnsIllustration,
+		htmlElements.sectionsIllustration,
+		htmlElements.sectionsGraphicDesign,
+		htmlElements.bckwrdIconsIllustrations,
+		htmlElements.main,
+		htmlElements.thumbnailsWrapper
+	)
+
+	handleBackwardsGraphicDesigns(
+		htmlElements.btnsGraphicDesign,
+		htmlElements.sectionsIllustration,
+		htmlElements.sectionsGraphicDesign,
+		htmlElements.bckwrdIconsDesigns,
 		htmlElements.main,
 		htmlElements.thumbnailsWrapper
 	)

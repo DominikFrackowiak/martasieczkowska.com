@@ -80,3 +80,10 @@
 	// 		}
 	// 	})
 	// )
+
+	
+	//nasluchiwanie na przyciski przewijania
+	//jesli btn-graphic design (jest ich dwa, wiec forEach)
+ //petla po sekcjach graphic design
+	
+	
