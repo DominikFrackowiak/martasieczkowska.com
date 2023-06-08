@@ -14,6 +14,7 @@ import { handleForwardsIllustrations } from './scripts/backwardsForwardsIcons'
 import { handleForwardsGraphicDesigns } from './scripts/backwardsForwardsIcons'
 import { handleBackwardsIllustrations } from './scripts/backwardsForwardsIcons'
 import { handleBackwardsGraphicDesigns } from './scripts/backwardsForwardsIcons'
+import { handleBackwardsForwardsOnArrowKeydown } from './scripts/backwardsForwardsIcons'
 
 const init = () => {
 	const htmlElements = {
@@ -172,6 +173,12 @@ const init = () => {
 		htmlElements.sectionsIllustration,
 		htmlElements.sectionsGraphicDesign,
 		htmlElements.bckwrdIconsDesigns,
+		htmlElements.main,
+		htmlElements.thumbnailsWrapper
+	)
+
+	handleBackwardsForwardsOnArrowKeydown(
+		htmlElements.fullSizeImagesHiddenSections,
 		htmlElements.main,
 		htmlElements.thumbnailsWrapper
 	)

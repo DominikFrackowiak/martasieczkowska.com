@@ -4,11 +4,25 @@
 		width: 100%;
 	}
 
+	.about-me__figcaption {
+		margin-top: 10px;
+	}
+
 	.about-me__p {
 		@media (min-width: 1200px) {
 			max-width: 45%;
 		}
 	}
+
+	.about-me__a {
+		text-decoration: none;
+		color: var(--black);
+		font-family: 'Source Serif Pro';
+	}
+}
+
+figcaption {
+	margin-top: 10px;
 }
 
 .section.active {
@@ -31,6 +45,10 @@
 		}
 
 		&__figure * {
+			display: block;
+		}
+
+		&__a {
 			display: block;
 		}
 	}

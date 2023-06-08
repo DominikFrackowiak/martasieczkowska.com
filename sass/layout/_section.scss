@@ -42,11 +42,19 @@
 		grid-column: 3/-1;
 		grid-row: span 1;
 
+		@media (min-width: 576px) {
+			width: 576px;
+		}
+
 		@media (min-width: 768px) {
 			width: 516px;
 		}
 
 		@media (min-width: 992px) {
+			width: 668px;
+		}
+
+		@media (min-width: 1200px) {
 			width: 100%;
 		}
 	}

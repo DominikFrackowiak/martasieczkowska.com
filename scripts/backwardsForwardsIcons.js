@@ -201,3 +201,82 @@ export const handleBackwardsGraphicDesigns = (
 		})
 	})
 }
+
+// export const handleBackwardsForwardsOnArrowKeydown = (
+// 	sections,
+// 	main,
+// 	thumbnailsWrapper
+// ) => {
+// 	document.addEventListener('keydown', event => {
+// 		sections.forEach((section, index) => {
+// 			if (section.classList.contains('active')) {
+// 				if (event.key === 'ArrowLeft') {
+// 					if (index > 0) {
+// 						window.scrollTo(0, 0)
+// 						sections[index].classList.remove('active')
+// 						sections[index - 1].classList.add('active')
+// 						handleMainResizingAndThumbnailsWrapperTranslate(
+// 							sections[index - 1],
+// 							main,
+// 							thumbnailsWrapper
+// 						)
+// 					}
+// 				} else if (event.key === 'ArrowRight') {
+// 					if (index < sections.length - 1) {
+// 						window.scrollTo(0, 0)
+// 						sections[index].classList.remove('active')
+// 						sections[index + 1].classList.add('active')
+// 						handleMainResizingAndThumbnailsWrapperTranslate(
+// 							sections[index + 1],
+// 							main,
+// 							thumbnailsWrapper
+// 						)
+// 					}
+// 				}
+// 			}
+// 		})
+// 	})
+// }
+
+export const handleBackwardsForwardsOnArrowKeydown = (
+	sections,
+	main,
+	thumbnailsWrapper
+) => {
+	document.addEventListener('keydown', event => {
+		let activeSectionIndex = -1
+
+		sections.forEach((section, index) => {
+			if (section.classList.contains('active')) {
+				activeSectionIndex = index
+				return // Zakończ pętlę, gdy znaleziono aktywną sekcję
+			}
+		})
+
+		if (activeSectionIndex !== -1) {
+			if (event.key === 'ArrowLeft') {
+				if (activeSectionIndex > 0) {
+					window.scrollTo(0, 0)
+					sections[activeSectionIndex].classList.remove('active')
+					sections[activeSectionIndex - 1].classList.add('active')
+					handleMainResizingAndThumbnailsWrapperTranslate(
+						sections[activeSectionIndex - 1],
+						main,
+						thumbnailsWrapper
+					)
+				}
+			} else if (event.key === 'ArrowRight') {
+				if (activeSectionIndex < sections.length - 1) {
+					window.scrollTo(0, 0)
+					sections[activeSectionIndex].classList.remove('active')
+					sections[activeSectionIndex + 1].classList.add('active')
+					handleMainResizingAndThumbnailsWrapperTranslate(
+						sections[activeSectionIndex + 1],
+						main,
+						thumbnailsWrapper
+					)
+				}
+			}
+		}
+	})
+}
